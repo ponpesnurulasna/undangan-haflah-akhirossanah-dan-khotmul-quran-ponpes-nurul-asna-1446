@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haflah Akhirossanah & Khotmul Qur'an - Pondok Pesantren Nurul Asna</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Audio Control -->
+    <div class="audio-control">
+        <button id="audioButton" class="audio-button">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+    <audio id="bgMusic" preload="auto">
+        <source src="assets/sound/sound.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Navigation -->
+    <div class="nav-buttons">
+        <a href="#pembuka" class="nav-button" data-tooltip="Pembuka">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="#rundown" class="nav-button" data-tooltip="Susunan Acara">
+            <i class="fas fa-list-ul"></i>
+        </a>
+        <a href="#peserta" class="nav-button" data-tooltip="Peserta">
+            <i class="fas fa-users"></i>
+        </a>
+        <a href="#maps" class="nav-button" data-tooltip="Lokasi Acara">
+            <i class="fas fa-map-marker-alt"></i>
+        </a>
+        <a href="#live-stream" class="nav-button" data-tooltip="Live Streaming">
+            <i class="fas fa-broadcast-tower"></i>
+        </a>
+    </div>
+
+    <!-- Pembuka Section -->
+    <section id="pembuka" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="greeting-section" data-aos="fade-up">
+                        <h1 class="arabic-greeting">Assalamu'alaikum</h1>
+                        <div class="greeting-text">
+                            <p>Semoga kita selalu dalam limpahan rahmat dan taufiq Allah Subhanahu Wa Ta'ala.<br>
+                                Aamiin.</p>
+                            <p>Dengan ini, kami atas nama panitia mengharap kehadirannya<br>
+                            dalam acara Haflah Akhirossanah & Khotmul Qur'an<br>
+                            Pondok Pesantren Nurul Asna Tahun 1446 H / 2025 M
+                            <br>yang Insya Allah akan diselenggarakan pada:</p>
+                        </div>
+                        <div class="event-details" data-aos="fade-up" data-aos-delay="100">
+                            <p class="event-date">
+                                Selasa Legi Malam Rabu Pahing<br>
+                                20 Sya'ban 1446 H<br>
+                                18 Februari 2025 M
+                            </p>
+                            <div class="countdown-section">
+                                <h3 class="countdown-title">Menuju Acara</h3>
+                                <div class="countdown-container">
+                                    <div class="countdown-item">
+                                        <div class="countdown-value" id="days">00</div>
+                                        <div class="countdown-label">Hari</div>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <div class="countdown-value" id="hours">00</div>
+                                        <div class="countdown-label">Jam</div>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <div class="countdown-value" id="minutes">00</div>
+                                        <div class="countdown-label">Menit</div>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <div class="countdown-value" id="seconds">00</div>
+                                        <div class="countdown-label">Detik</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="time">16.00 - selesai</p>
+                            <div class="location">
+                                <p>Pondok Pesantren Nurul Asna Desa Kalirejo<br>
+                                RT 06/ RW 01 Kecamatan Undaan Kabupaten Kudus</p>
+                            </div>
+                        </div>
+                        <div class="text-center mb-5" data-aos="fade-down">
+                            <div class="guest-section" data-aos="fade-up" data-aos-delay="200">
+                                <h2 class="section-title">Muballigh</h2>
+                            </div>
+                            <div class="opening-content" data-aos="fade-up">
+                                <div class="muballigh-content">
+                                    <div class="muballigh-photo">
+                                        <img src="assets/habib_umar.png" alt="Habib Umar Mutohar" class="img-fluid">
+                                    </div>
+                                    <div class="masyayikh-text">
+                                        Habib Umar Mutohar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Opening Section -->
+                        <div class="text-center mb-5" data-aos="fade-down">
+                            <h2 class="section-title">Do'a</h2>
+                        </div>
+                        <div class="opening-content" data-aos="fade-up">
+                            <div class="masyayikh-text">
+                                Masyayikh PP. Mahir Arriyadl Ringin Agung
+                            </div>
+                        </div>
+                        <div class="greeting-text">
+                            <p>Atas perhatian dan kehadirannya kami ucapkan terimakasih.</p>
+                        </div>
+                        <h1 class="arabic-greeting">Wa'alaikum Salam</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rundown Section -->
+    <section id="rundown" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="text-center mb-5" data-aos="fade-down">
+                        <h1 class="section-title">Susunan Acara</h1>
+                    </div>
+
+                    <div class="rundown-section" data-aos="fade-up">
+                        <h3 class="rundown-title">Acara Pra-Haflah</h3>
+                        <div class="rundown-time">Pukul 16.00 - 19.00 WIB</div>
+                        <div class="rundown-list">
+                            <ol>
+                                <li data-aos="fade-right" data-aos-delay="100">Rebana</li>
+                                <li data-aos="fade-right" data-aos-delay="200">Muchafadzoh Kitab Salaf</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="rundown-section" data-aos="fade-up">
+                        <h3 class="rundown-title">Acara Inti</h3>
+                        <div class="rundown-time">Pukul 19.00 WIB - Selesai</div>
+                        <div class="rundown-list">
+                            <ol>
+                                <li data-aos="fade-right" data-aos-delay="100">Pembukaan</li>
+                                <li data-aos="fade-right" data-aos-delay="200">Khotmul Qur'an dan Bacaan Tahlil</li>
+                                <li data-aos="fade-right" data-aos-delay="250">Istirahat</li>
+                                <li data-aos="fade-right" data-aos-delay="150">Tilawatul Qur'an</li>
+                                <li data-aos="fade-right" data-aos-delay="300">Sambutan-sambutan</li>
+                                <li data-aos="fade-right" data-aos-delay="350">Mauidzoh Hasanah</li>
+                                <li data-aos="fade-right" data-aos-delay="400">Do'a dan Penutup</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peserta Section -->
+    <section id="peserta" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="text-center mb-5" data-aos="fade-down">
+                        <h2 class="section-title">Khotimin Khotimat</h2>
+                        <h3 class="subtitle">
+                            Pondok Pesantren Nurul Asna
+                            <span>Tahun 1446 H / 2025 M</span>
+                        </h3>
+                    </div>
+                    <div class="participant-list">
+                        <!-- Khotimin -->
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="participant-number">1</div>
+                            <div class="participant-name">Muhammad Ali Fathoni</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="participant-number">2</div>
+                            <div class="participant-name">Muhammad Isa Daud</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="participant-number">3</div>
+                            <div class="participant-name">Muhammad Syarifuddin Hidayatullah</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="250">
+                            <div class="participant-number">4</div>
+                            <div class="participant-name">Muhammad Aditya Riyansyah</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="participant-number">5</div>
+                            <div class="participant-name">Muhammad Rohidil Mu'iz</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="350">
+                            <div class="participant-number">6</div>
+                            <div class="participant-name">Muhammad Tajul Falah</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="participant-number">7</div>
+                            <div class="participant-name">Syahli Izul Fikri</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="450">
+                            <div class="participant-number">8</div>
+                            <div class="participant-name">Durrin Naja</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="participant-number">9</div>
+                            <div class="participant-name">Ahmad Fahril</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="550">
+                            <div class="participant-number">10</div>
+                            <div class="participant-name">Jindan Ubaidillah</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="participant-number">11</div>
+                            <div class="participant-name">Dafa Rahmat Ilham Arramadhani</div>
+                        </div>
+
+                        <!-- Khotimat -->
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="650">
+                            <div class="participant-number">12</div>
+                            <div class="participant-name">Intan Wulandari</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="700">
+                            <div class="participant-number">13</div>
+                            <div class="participant-name">Zhahratun Navisha</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="750">
+                            <div class="participant-number">14</div>
+                            <div class="participant-name">Fathimatuz Zahra</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="800">
+                            <div class="participant-number">15</div>
+                            <div class="participant-name">Maslachatul Ummah</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="850">
+                            <div class="participant-number">16</div>
+                            <div class="participant-name">Romaniatul Azizah</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="900">
+                            <div class="participant-number">17</div>
+                            <div class="participant-name">Zahroh Vicry Maemunah</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="950">
+                            <div class="participant-number">18</div>
+                            <div class="participant-name">Nadia Avita Sari</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="1000">
+                            <div class="participant-number">19</div>
+                            <div class="participant-name">Eka Setyaningsih</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="1050">
+                            <div class="participant-number">20</div>
+                            <div class="participant-name">Intan Ely Mahira</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="1100">
+                            <div class="participant-number">21</div>
+                            <div class="participant-name">Ummi Kulsum</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="1150">
+                            <div class="participant-number">22</div>
+                            <div class="participant-name">Raysha Ramania Early</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="1200">
+                            <div class="participant-number">23</div>
+                            <div class="participant-name">Aprilia Putri Ayu</div>
+                        </div>
+                        <div class="participant-item" data-aos="fade-up" data-aos-delay="1250">
+                            <div class="participant-number">24</div>
+                            <div class="participant-name">Fika Izza Malikha</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Streaming Section -->
+    <section id="live-stream" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="text-center mb-5" data-aos="fade-down">
+                        <h2 class="section-title">Live Streaming</h2>
+                    </div>
+                    <div class="live-stream-content" data-aos="fade-up">
+                        <div class="stream-info">
+                            <p class="stream-text">Hadir secara virtual melalui live streaming di channel YouTube kami</p>
+                            <div class="youtube-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <p class="channel-name">ASNA TV</p>
+                            <p class="stream-schedule">Live Streaming akan dimulai pada:<br>Selasa, 18 Februari 2025<br>Pukul 16.00 WIB</p>
+                        </div>
+                        <div class="stream-buttons">
+                            <a href="https://youtube.com/@ponpesnurulasna?si=ZSCBOMhG_o13wx8X" target="_blank" class="btn btn-youtube">
+                                <i class="fab fa-youtube"></i> Kunjungi Channel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps Section -->
+    <section id="maps" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="text-center mb-5" data-aos="fade-down">
+                        <h2 class="section-title">Lokasi Acara</h2>
+                    </div>
+                    <div class="maps-content" data-aos="fade-up">
+                        <div class="location-text">
+                            <p>Pondok Pesantren Nurul Asna</p>
+                            <p>Desa Kalirejo RT 06/ RW 01 Kecamatan Undaan Kabupaten Kudus</p>
+                        </div>
+                        <div class="maps-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0338404795837!2d111.99506797495595!3d-8.092555591939744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78f2d0f0f0f0f%3A0x3f0f0f0f0f0f0f0f!2sPondok%20Pesantren%20Nurul%20Asna!5e0!3m2!1sid!2sid!4v1706036740775!5m2!1sid!2sid" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <div class="maps-buttons">
+                            <a href="https://maps.app.goo.gl/2XZJju2cRJ5PUWWv8" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Buka di Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="footer-content text-center">
+                        <h3 class="footer-title">Haflah Akhirussanah & Khotmil Qur'an</h3>
+                        <p class="footer-subtitle">Pondok Pesantren Nurul Asna</p>
+                        <div class="footer-divider"></div>
+                        <p class="footer-credit">Made by Nurul Asna Developer</p>
+                        <p class="footer-copyright">&copy; 2025 PP. Nurul Asna. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/audio-control.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const eventDate = new Date('2025-02-18T16:00:00+07:00').getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Highlight active section in navigation
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navButtons = document.querySelectorAll('.nav-button');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navButtons.forEach(button => {
+                button.classList.remove('active');
+                if (button.getAttribute('href').slice(1) === current) {
+                    button.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
